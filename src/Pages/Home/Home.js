@@ -47,7 +47,7 @@ function Home() {
             </span>
             <span className={Style.hand}>🤚</span>
           </h1>
-          <h2 style={{ marginLeft: "-5rem" }}>Sou Desenvolvedor Front-End.</h2>
+          <h2>Sou Desenvolvedor Front-End.</h2>
           <Box
             component={"ul"}
             p={"0.8rem"}
