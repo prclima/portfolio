@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={style.navbar}>
+      <div className={style.navbar} gap={{ xs: "1rem", md: "8rem" }}>
         <a
           onClick={() => {
             navigate("/");
