@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import Style from "./Footer.module.css";
 
 function Footer() {
