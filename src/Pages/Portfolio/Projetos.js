@@ -124,7 +124,15 @@ function Projetos() {
                 href={"https://github.com/prclima/ChatApp"}
                 style={{ textDecoration: "none" }}
               >
-                Source Code
+                Source Code - Back-End
+              </a>
+            </Box>
+            <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
+              <a
+                href={"https://github.com/prclima/ChatApp-Front"}
+                style={{ textDecoration: "none" }}
+              >
+                Source Code - Front-End
               </a>
             </Box>
           </Box>
