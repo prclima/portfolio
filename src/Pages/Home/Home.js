@@ -19,7 +19,7 @@ export default function Home() {
         flexDirection={{ xs: "column", md: "row" }}
         alignItems={"center"}
         justifyContent={"center"}
-        minHeight={"calc(100vh - 175px)"}
+        minHeight={"calc(100vh)"}
       >
         <Box
           className={Style.photo}
