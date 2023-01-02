@@ -1,6 +1,3 @@
-import Footer from "../../Components/Footer/Footer";
-import About from "../About/About";
-import React from "react";
 import Style from "./Home.module.css";
 import { Box } from "@mui/material";
 import PhotoProf from "../../../src/Img/Ped.png";
@@ -10,9 +7,12 @@ import {
   TbBrandInstagram,
 } from "react-icons/tb";
 
-function Home() {
+import { ThemeState } from "../../Context/Theme";
+
+export default function Home() {
+  const { theme, setTheme } = ThemeState();
   return (
-    <div>
+    <div className={Style.all}>
       <Box
         component={"main"}
         display={"flex"}
@@ -83,18 +83,18 @@ function Home() {
             </Box>
           </Box>
           <Box diplay={"flex"} flexDirection={"row"}>
-            <a className={Style.icon} href="https://github.com/prclima">
+            <a className={Style.black} href="https://github.com/prclima">
               <TbBrandGithub />
             </a>
             <a
-              className={Style.icon}
+              className={Style.black}
               href="https://www.linkedin.com/in/pedro-rugai-cunha-lima-1bb271231/"
             >
               <TbBrandLinkedin />
             </a>
 
             <a
-              className={Style.icon}
+              className={Style.black}
               href="https://www.instagram.com/pedrugai/"
             >
               <TbBrandInstagram />
@@ -105,5 +105,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

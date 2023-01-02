@@ -1,3 +1,7 @@
+.all {
+  height: calc(100vh - 65px);
+}
+
 .photo {
   background: linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
 }
@@ -62,8 +66,13 @@ a:hover {
   color: #c9c9c9;
 }
 
-.icon {
-  /* color: black; */
+.black {
+  color: black;
+  font-size: 2.2rem;
+}
+
+.white {
+  color: white;
   font-size: 2.2rem;
 }
 

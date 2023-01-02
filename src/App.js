@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 import { Routes, Route } from "react-router-dom";
 import About from "./Pages/About/About";
 import "./App.css";
@@ -15,7 +16,8 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </div>
   );

@@ -20,7 +20,6 @@ code {
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 img {
@@ -29,4 +28,9 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+.divMaster.icon {
+  color: black;
+  font-size: 2.2rem;
 }

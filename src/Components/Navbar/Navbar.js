@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={style.navbar} gap={{ xs: "1rem", md: "8rem" }}>
+      <div className={style.navbar}>
         <a
           onClick={() => {
             navigate("/");
@@ -31,7 +31,13 @@ export default function Navbar() {
           About me
         </a>
         <a style={{ marginTop: "0.3rem", fontSize: "3rem" }}>PL</a>
-        <a>Portfolio</a>
+        <a
+          onClick={() => {
+            navigate("/portfolio");
+          }}
+        >
+          Portfolio
+        </a>
         <Box
           fontSize={"1.5rem"}
           sx={{
@@ -40,22 +46,22 @@ export default function Navbar() {
           }}
         >
           {theme === "light" ? (
-            <spam
+            <span
               onClick={() => {
                 setTheme("dark");
               }}
             >
               🌑
-            </spam>
+            </span>
           ) : (
-            <spam
+            <span
               onClick={() => {
                 setTheme("light");
               }}
             >
               {" "}
               🌕{" "}
-            </spam>
+            </span>
           )}
         </Box>
       </div>
