@@ -4,11 +4,9 @@ import Projetos from "./Projetos";
 
 function Portfolio(props) {
   return (
-    <Box className={Style.wrapper}>
-      <Grid display={"flex"} justifyContent={"center"}>
-        <Grid item xs={12} md={6}>
-          <Projetos image={props.src} href={props.href} />
-        </Grid>
+    <Box>
+      <Grid display={"flex"} justifyContent={"center"} flexWrap={"wrap"}>
+        <Projetos image={props.src} />
       </Grid>
     </Box>
   );
