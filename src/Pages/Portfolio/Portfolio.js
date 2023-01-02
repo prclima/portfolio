@@ -4,7 +4,7 @@ import Projetos from "./Projetos";
 
 function Portfolio(props) {
   return (
-    <Box>
+    <Box className={Style.wrapper}>
       <Grid display={"flex"} justifyContent={"center"} flexWrap={"wrap"}>
         <Projetos image={props.src} />
       </Grid>
