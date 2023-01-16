@@ -8,9 +8,11 @@ import {
 } from "react-icons/tb";
 
 import { ThemeState } from "../../Context/Theme";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   const { theme, setTheme } = ThemeState();
+
   return (
     <div className={Style.all}>
       <Box
@@ -25,7 +27,7 @@ export default function Home() {
           className={Style.photo}
           component={"img"}
           src={PhotoProf}
-          style={{ padding: "0.75rem" }}
+          style={{ padding: "0rem" }}
           width={{ xs: "35vh", md: "40vh" }}
           height={{ xs: "35vh", md: "40vh" }}
           borderRadius={"50%"}
