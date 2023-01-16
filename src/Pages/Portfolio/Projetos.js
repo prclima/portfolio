@@ -61,7 +61,7 @@ function Projetos() {
             alt={"mockup"}
             src={invetario}
           />
-          <h1 style={{ fontSize: "2rem" }}>Controle de Invetário</h1>
+          <h1 style={{ fontSize: "2rem" }}>Controle de Inventário</h1>
           <Box
             display={"flex"}
             flexDirection={"column"}
