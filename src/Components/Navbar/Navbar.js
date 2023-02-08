@@ -1,70 +1,50 @@
 import * as React from "react";
-
-import style from "./Navbar.module.css";
-import { Box } from "@mui/material";
-import Switch from "@mui/material/Switch";
-import { useNavigate } from "react-router-dom";
+import Style from "./Navbar.module.css";
 
 import { ThemeState } from "../../Context/Theme";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const { theme, setTheme } = ThemeState();
 
-  const navigate = useNavigate();
-
   return (
     <>
-      <div className={style.navbar}>
-        <a
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          {" "}
-          Home
-        </a>
-        <a
-          onClick={() => {
-            navigate("/about");
-          }}
-        >
-          About me
-        </a>
-        <a style={{ marginTop: "0.3rem", fontSize: "3rem" }}>PL</a>
-        <a
-          onClick={() => {
-            navigate("/portfolio");
-          }}
-        >
-          Portfolio
-        </a>
-        <Box
-          fontSize={"1.5rem"}
-          sx={{
-            cursor: "pointer",
-            ":hover": { transform: "translateY(-3px)" },
-          }}
-        >
-          {theme === "light" ? (
-            <span
-              onClick={() => {
-                setTheme("dark");
-              }}
-            >
-              🌑
-            </span>
-          ) : (
-            <span
-              onClick={() => {
-                setTheme("light");
-              }}
-            >
-              {" "}
-              🌕{" "}
-            </span>
-          )}
-        </Box>
-      </div>
+      <header className={Style.header}>
+        <div>
+          <h1>Pedro Lima</h1>
+        </div>
+        <div className={Style.headerMenu}>
+          <a href="/"> Home</a>
+          <a href="#about">Sobre </a>
+          <a href="#projetos">Projetos</a>
+
+          <div
+            style={{
+              fontSize: "1.5rem",
+              cursor: "pointer",
+            }}
+          >
+            {theme === "light" ? (
+              <span
+                onClick={() => {
+                  setTheme("dark");
+                }}
+              >
+                🌘
+              </span>
+            ) : (
+              <span
+                onClick={() => {
+                  setTheme("light");
+                }}
+              >
+                {" "}
+                🌕{" "}
+              </span>
+            )}
+          </div>
+        </div>
+      </header>
     </>
   );
 }

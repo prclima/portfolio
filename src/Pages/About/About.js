@@ -1,100 +1,32 @@
 import React from "react";
 import Style from "./About.module.css";
-import Terminal from "./Terminal";
-import { Box } from "@mui/material";
+import Perfil from "../../Img/Imagem.png";
 
 export default function About() {
-  function aboutMeText() {
-    return (
-      <>
-        <p className={Style.white}>
-          <span className={Style.green}>Pedro Lima $</span> cat about Pedro
-        </p>
-        <p>
-          <span className={Style.green}>
-            about Pedro <span className={Style.green}> main </span>
-          </span>
-          <span className={Style.white}>
-            Olá, sou um administrador que sempre trabalhou com tecnologia. Tive
-            minha empresa, fora da área, mas percebi que tecnologia era o que
-            queria. <br />
-            Responsabilidade, inquietude e paixão são três palavras que podem de
-            definir.
-            <br />- Responsabilidade por sempre me colocar no papel da outra
-            pessoa. <br />
-            - Inquietude do marasmo, sempre almejando pelo novo, seja tecnologia
-            ou conhecimento. <br />- Paixão por tudo que faço, sem isso nada faz
-            sentido.{" "}
-          </span>
-        </p>
-      </>
-    );
-  }
-
-  function skillsText() {
-    return (
-      <>
-        <p className={Style.white}>
-          <span className={Style.green}>Pedro Lima $</span> cd skills/tools
-        </p>
-        <p className={Style.white}>
-          <span className={Style.green}>
-            skills/tools <span className={Style.green}>(main)</span> $
-          </span>
-          ls
-        </p>
-        <p className={Style.green}> Proficient With</p>
-        <ul className={Style.white}>
-          <li>javascript</li>
-          <li>react</li>
-          <li>git</li>
-          <li>github</li>
-          <li>css</li>
-          <li>html</li>
-          <li>sql</li>
-        </ul>
-        <p className={Style.green}> Exposed To</p>
-        <ul className={Style.white}>
-          <li>nodeJs</li>
-          <li>restAPI</li>
-          <li>mongodb</li>
-          <li>express</li>
-        </ul>
-      </>
-    );
-  }
-
-  function miscText() {
-    return (
-      <>
-        <p className={Style.white}>
-          <span className={Style.green}>Pedro $</span> cd hobbies/interests
-        </p>
-        <p className={Style.white}>
-          <span className={Style.green}>
-            hobbies/interests <span className={Style.green}>(main)</span> $
-          </span>{" "}
-          ls
-        </p>
-        <ul className={Style.white}>
-          <li>leitura</li>
-          <li>esportes</li>
-          <li>natureza</li>
-        </ul>
-      </>
-    );
-  }
-
   return (
-    <Box
-      display={"flex"}
-      flexDirection={"column"}
-      alignItems={"center"}
-      mt={"3rem"}
-    >
-      <Terminal text={aboutMeText()} />
-      <Terminal text={skillsText()} />
-      <Terminal text={miscText()} />
-    </Box>
+    <>
+      <div className={Style.wrapper} id="about">
+        <div className={Style.infos}>
+          <h2>Sobre mim</h2>
+          <p>
+            Sempre estive ligado a tecnologia, trabalhei por 9 anos em uma
+            software house, já tive minha empresa e resolvi seguir meu sonho de
+            programar. <br /> Fiz diversos cursos na área, como o bootcamp de
+            Web Developer Full Stack da IronHack - São Paulo, FreeCodeCamp entre
+            outros.
+            <br />
+            Tenho experiência com React.js, Redux, JavaScript, HTML 5, CSS 3,
+            MongoDb, SQL e consumo de API REST.
+          </p>
+          <a href="../../Img/Pedro-Lima.pdf" download>
+            Baixar CV
+          </a>
+        </div>
+
+        <div className={Style.ImgPerfil}>
+          <img src={Perfil} alt="" />
+        </div>
+      </div>
+    </>
   );
 }

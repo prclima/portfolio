@@ -1,3 +1,70 @@
+.all {
+  min-height: 100vh;
+}
+
 .wrapper {
-  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  height: auto;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.projeto:hover {
+  box-shadow: 11px 12px 9.5px 4px #dddddd;
+  background-color: rgb(244, 244, 244);
+}
+
+.link {
+  justify-content: start;
+  margin-top: auto;
+}
+
+.link a {
+  display: inline-block;
+  height: 2.5em;
+  padding: 0.5rem 1.2rem;
+
+  background: none;
+  border-radius: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  pointer-events: all;
+  user-select: none;
+  cursor: pointer;
+  outline: 0.12rem solid#5151e6;
+  background-color: #4949ff;
+  color: #fff;
+  margin: 10px;
+}
+
+.projeto a:hover {
+  background-color: #fff;
+  color: #4949ff;
+  transition: 0.4s;
+}
+
+.projetoImg img {
+  border-radius: 20px;
+  width: 200px;
+  height: 120px;
 }

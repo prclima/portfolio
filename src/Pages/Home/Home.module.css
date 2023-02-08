@@ -1,29 +1,86 @@
-.all {
-  height: 100%;
+.introducao {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 89px;
+  align-items: end;
+  justify-items: center;
+  min-height: 100vh;
 }
 
-.photo {
-  background: linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
-}
-.span {
-  color: linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
+.introducao h1 {
+  font-size: 2.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 2.3rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 3rem;
-    text-align: left;
+.introducao a img {
+  width: 35px;
+  margin: 0.2rem;
+}
+
+.introducao a img:hover {
+  opacity: 0.2;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.introducao a span {
+  font-size: 2rem;
+}
+
+.maisInfos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 105px;
+  cursor: pointer;
+}
+
+.maisInfos img {
+  width: 35px;
+}
+.introducao .maisInfos a {
+  text-decoration: none;
+}
+
+.introducao p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao span {
+    font-size: 1rem;
   }
 }
 
-h2 {
-  font-size: 1.55rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 2rem;
-    text-align: left;
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .introducao h1 {
+    font-size: 1.5rem;
+  }
+
+  .introducao ul {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
   }
 }
 
