@@ -42,8 +42,8 @@ export default function Home() {
           </a>
         </div>
         <div className={Style.maisInfos}>
-          <a href="#about">Mais informações</a>
           <img src={scroll} />
+          <a href="#about">Mais informações</a>
         </div>
       </div>
       <About />

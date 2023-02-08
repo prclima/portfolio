@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 89px;
+  gap: 1rem;
   align-items: end;
   justify-items: center;
   min-height: 100vh;
@@ -33,15 +33,17 @@
 
 .maisInfos {
   display: flex;
+  margin-top: -10rem;
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 105px;
+  /* width: 105px;  */
   cursor: pointer;
 }
 
 .maisInfos img {
   width: 35px;
+  cursor: none;
 }
 .introducao .maisInfos a {
   text-decoration: none;
