@@ -18,7 +18,10 @@ export default function About() {
             Tenho experiência com React.js, Redux, JavaScript, HTML 5, CSS 3,
             MongoDb, SQL e consumo de API REST.
           </p>
-          <a href="../../Img/Pedro-Lima.pdf" download>
+          <a
+            href="https://github.com/prclima/portfolio/blob/main/src/Img/Pedro-Lima.pdf"
+            download
+          >
             Baixar CV
           </a>
         </div>
