@@ -19,8 +19,8 @@ export default function About() {
             MongoDb, SQL e consumo de API REST.
           </p>
           <a
-            href="https://github.com/prclima/portfolio/blob/main/src/Img/Pedro-Lima.pdf"
-            download
+            href="https://raw.githubusercontent.com/prclima/portfolio/main/src/Img/Pedro-Lima.pdf"
+            download="Pedro-Lima.pdf"
           >
             Baixar CV
           </a>
