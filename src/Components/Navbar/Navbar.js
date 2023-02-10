@@ -1,50 +1,96 @@
-import * as React from "react";
 import Style from "./Navbar.module.css";
-
+import { useState } from "react";
 import { ThemeState } from "../../Context/Theme";
-import { Link } from "react-router-dom";
+import hamburguer from "../../Img/hamburger-menu.svg";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { theme, setTheme } = ThemeState();
+  const [active, setActive] = useState(false);
+
+  const { pathname } = useLocation();
 
   return (
     <>
-      <header className={Style.header}>
-        <div>
+      <header>
+        <div className={Style.header}>
           <h1>Pedro Lima</h1>
-        </div>
-        <div className={Style.headerMenu}>
-          <a href="/"> Home</a>
-          <a href="#about">Sobre </a>
-          <a href="#projetos">Projetos</a>
-
-          <div
-            style={{
-              fontSize: "1.5rem",
-              cursor: "pointer",
-            }}
-          >
-            {theme === "light" ? (
-              <span
-                onClick={() => {
-                  setTheme("dark");
-                }}
-              >
-                🌘
-              </span>
-            ) : (
-              <span
-                onClick={() => {
-                  setTheme("light");
-                }}
-              >
+          <div className={active ? Style.menuMobile : Style.headerMenu}>
+            <ul>
+              <li>
+                <a
+                  onClick={() => {
+                    setActive(false);
+                  }}
+                  href="/"
+                >
+                  {" "}
+                  Home
+                </a>{" "}
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setActive(false);
+                  }}
+                  href="#about"
+                >
+                  Sobre
+                </a>{" "}
+              </li>
+              <li>
                 {" "}
-                🌕{" "}
-              </span>
-            )}
+                <a
+                  onClick={() => {
+                    setActive(false);
+                  }}
+                  href="#projetos"
+                >
+                  {" "}
+                  Projetos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className={Style.hamburguer}>
+            <img
+              src={hamburguer}
+              alt="menu"
+              onClick={() => {
+                setActive(!active);
+              }}
+            />
           </div>
         </div>
       </header>
     </>
   );
+}
+
+{
+  /* <div
+  style={{
+    fontSize: "1.5rem",
+    cursor: "pointer",
+  }}
+>
+  {theme === "light" ? (
+    <span
+      onClick={() => {
+        setTheme("dark");
+      }}
+    >
+      🌘
+    </span>
+  ) : (
+    <span
+      onClick={() => {
+        setTheme("light");
+      }}
+    >
+      {" "}
+      🌕{" "}
+    </span>
+  )}
+</div> */
 }

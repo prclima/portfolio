@@ -1,5 +1,6 @@
 .all {
   min-height: 100vh;
+  padding: 2rem;
 }
 
 .wrapper {
@@ -67,4 +68,30 @@
   border-radius: 20px;
   width: 200px;
   height: 120px;
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    max-width: 100vw;
+  }
+  .h2 {
+    font-size: 1.1rem;
+  }
+  .projeto {
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .projetoImg img {
+    display: none;
+  }
+  .link {
+    font-size: 0.7rem;
+  }
+  .projeto p {
+    font-size: 0.8rem;
+  }
 }

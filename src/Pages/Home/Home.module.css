@@ -71,54 +71,6 @@
   .introducao h1 {
     font-size: 1.5rem;
   }
-
-  .introducao ul {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .introducao {
-    grid-template-columns: 1fr;
-  }
-  .introducao img {
-    display: none;
-  }
-}
-
-.hand {
-  animation-name: wave;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 a:hover {
@@ -135,6 +87,104 @@ a:hover {
   font-size: 2.2rem;
 }
 
-.icons {
-  font-size: 1.8rem;
+@media (max-width: 500px) {
+  .introducao {
+    min-height: initial;
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: initial;
+    color: #1a2744;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+    line-height: 1.625;
+    margin-bottom: 0;
+  }
+  .introducao p {
+    font-size: 0.8rem;
+  }
+
+  .introducao a span {
+    font-size: 0.6rem;
+  }
+  .introducao img {
+    display: none;
+  }
+
+  .maisInfos {
+    padding-top: 6rem;
+  }
+  .maisInfos a {
+    display: inline-block;
+    height: 2.5em;
+    padding: 0.5rem 1.2rem;
+
+    background: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    pointer-events: all;
+    user-select: none;
+    cursor: pointer;
+    outline: 0.12rem solid#5151e6;
+    background-color: #4949ff;
+    color: #fff;
+    margin: 10px;
+  }
+
+  .maisInfos a:hover {
+    background-color: #fff;
+    color: #4949ff;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 650px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: initial;
+    color: #1a2744;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+    line-height: 1.625;
+    margin-bottom: 0;
+  }
+  .introducao p {
+    font-size: 0.8rem;
+  }
+
+  .introducao a span {
+    font-size: 0.6rem;
+  }
+  .introducao img {
+    display: none;
+  }
+
+  .maisInfos {
+    padding-top: 7rem;
+  }
+  .maisInfos a {
+    margin-top: 2rem;
+    display: inline-block;
+    height: 2.5em;
+    padding: 0.5rem 1.2rem;
+    background: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    pointer-events: all;
+    user-select: none;
+    cursor: pointer;
+    outline: 0.12rem solid#5151e6;
+    background-color: #4949ff;
+    color: #fff;
+  }
+
+  .maisInfos a:hover {
+    background-color: #fff;
+    color: #4949ff;
+    transition: 0.4s;
+  }
 }

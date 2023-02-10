@@ -1,6 +1,6 @@
 .wrapper {
-  padding-top: 10rem;
   display: grid;
+  padding: 2rem;
   grid-template-columns: 2fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
@@ -48,4 +48,72 @@
   background-color: #fff;
   color: #4949ff;
   transition: 0.4s;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    min-height: initial;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+  }
+  .infos h2 {
+    font-size: 1.4rem;
+    line-height: 1.525;
+    margin-bottom: 0;
+  }
+  .infos p {
+    font-size: 0.8rem;
+    line-height: 2.025;
+  }
+  .infos a {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .ImgPerfil {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+  .ImgPerfil img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    min-height: initial;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+  }
+  .infos h2 {
+    font-size: 1.4rem;
+    line-height: 1.525;
+    margin-bottom: 0;
+  }
+  .infos p {
+    font-size: 0.8rem;
+    line-height: 2.025;
+  }
+  .infos a {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .ImgPerfil {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+  .ImgPerfil img {
+    width: 200px;
+    height: 200px;
+  }
 }
