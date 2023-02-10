@@ -33,10 +33,10 @@
 
 .maisInfos {
   display: flex;
-  margin-top: -20rem;
+  /* margin-top: -20rem; */
   align-items: center;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   height: auto;
   /* width: 105px;  */
   cursor: pointer;
@@ -113,7 +113,7 @@ a:hover {
   }
 
   .maisInfos {
-    padding-top: 6rem;
+    margin-top: 1rem;
   }
   .maisInfos a {
     display: inline-block;
