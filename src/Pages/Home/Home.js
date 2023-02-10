@@ -18,11 +18,11 @@ export default function Home() {
         <div>
           <h1>
             Olá, me chamo Pedro. <br />
-            Desenvolvedor Front-end.
+            Sou desenvolvedor Front-end.
           </h1>
           <p>
             Bem-vindo! <br />
-            Sou um administrado que já foi funcionário, já empreendeu e com 30
+            Sou um administrador que já foi funcionário, já empreendeu e com 30
             anos decidiu ir atrás do seu sonho.
           </p>
           <div>
