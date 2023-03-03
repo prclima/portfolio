@@ -1,6 +1,7 @@
 import Style from "./Portfolio.module.css";
 import calc from "../../Img/calculadora.png";
 import chat from "../../Img/chat.png";
+import dogs from "../../Img/dogs.png";
 import invetario from "../../Img/inventario.png";
 
 import Carousel from "react-bootstrap/Carousel";
@@ -33,6 +34,13 @@ function Portfolio(props) {
       source: "https://github.com/prclima/ChatApp-Front",
       sobre:
         "Projeto criado com React.js, MongoDb, express e Node.js. A idéia principal era criar um chat em tempo real, onde a mensagem recebida deveria ser exibida sem a interação do usuário. Para a parte de comunicação utilizei o socket.io, as mensagens são salvas no banco de dados e também há o cadastro de usuário, a senha é criptografada. Utilizei o JWT-token para o processo de autenticação. O back-end foi feito por mim com express e node.js.",
+    },
+    {
+      img: dogs,
+      name: "InstaDog",
+      source: "https://github.com/prclima/socialDog",
+      sobre:
+        "Projeto de rede social baseada no Instagra. Foi criado com React.js e PHP. O usuário pode inclur, excluir e comentar as fotos dos cachorros. Há uma seção de estatísticas dos posts, com gráfico de quantos acessos eles tiveram e número de comentários. Não foi usada nenhuma biblioteca de CSS. ",
     },
   ];
 
