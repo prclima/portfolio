@@ -3,8 +3,7 @@ import calc from "../../Img/calculadora.png";
 import chat from "../../Img/chat.png";
 import dogs from "../../Img/dogs.png";
 import invetario from "../../Img/inventario.png";
-
-import Carousel from "react-bootstrap/Carousel";
+import login from "../../Img/login.png";
 
 function Portfolio(props) {
   let projetos = [
@@ -41,6 +40,13 @@ function Portfolio(props) {
       source: "https://github.com/prclima/socialDog",
       sobre:
         "Projeto de rede social baseada no Instagra. Foi criado com React.js e PHP. O usuário pode inclur, excluir e comentar as fotos dos cachorros. Há uma seção de estatísticas dos posts, com gráfico de quantos acessos eles tiveram e número de comentários. Não foi usada nenhuma biblioteca de CSS. ",
+    },
+    {
+      img: login,
+      name: "LoginPage",
+      source: "https://github.com/prclima/loginPage",
+      sobre:
+        "Projeto de uma página para login, responsiva. Foi usado React.JS e CSS puro. Para deixar o código clean e não ficar criando vários states, criei um hook useForm.",
     },
   ];
 
